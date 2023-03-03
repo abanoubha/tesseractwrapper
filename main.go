@@ -42,7 +42,8 @@ func (i ImageData) GetText() (string, error) {
 }
 
 func main() {
-	text, err := NewImageData("testFiles/1695.gif", "eng", 70, 13, 3).GetText()
+	text, err := NewImageData("testFiles/elon-musk-bitcoin.webp", "eng", 70, 13, 3).GetText()
+	// text, err := NewImageData("testFiles/is-android-apps-profitable.jpg", "ara", 70, 13, 3).GetText()
 	if err != nil {
 		println("error : ", err.Error())
 		os.Exit(1)
